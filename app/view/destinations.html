@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="../css/destinations.css">
+
+<!-- Heading for description Page -->
+<h1 class="mainHeading" style="">World's Beautiful Destinations</h1>
+
+<!-- Wrapper for destinations -->
+<div class="outerContainer" ng-repeat="destination in destinations">
+    <h3 class="innerHeading">
+        {{destination.place}} </br> {{destination.location}}
+    </h3>
+    <div class="imgContainer">
+        <img class="destinationImage" ng-src="{{destination.imgUrl}}"
+        alt="{{destination.location}}">
+    </div>
+    <div class="titleContainer">
+        {{destination.description}}
+    </div>
+</div>
